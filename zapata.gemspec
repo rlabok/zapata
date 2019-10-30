@@ -12,15 +12,15 @@ Gem::Specification.new do |spec|
   spec.description   = 'Who has time to write tests? This is a revolutional tool to make them write themselves.'
   spec.homepage      = 'https://github.com/Nedomas/zapata'
   spec.license       = 'MIT'
-  spec.required_ruby_version = '~> 2.0'
+  spec.required_ruby_version = '>= 2.0'
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = ['zapata']
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'parser', '~> 2.3.0.0'
-  spec.add_runtime_dependency 'unparser', '0.2.5'
+  spec.add_runtime_dependency 'parser', '~> 2.6.5.0'
+  spec.add_runtime_dependency 'unparser', '>= 0.2.5'
   spec.add_runtime_dependency 'andand', '~> 1.3.3'
   spec.add_runtime_dependency 'rails', '>= 3.0.0'
   spec.add_runtime_dependency 'slop', '~> 3.4'
